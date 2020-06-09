@@ -11,7 +11,8 @@ module.exports = {
         ]
       },
       colors: {
-        'ch-blue': '#0076D0',
+        'ch-blue': '#0075C9',
+        'ch-blue-hover': '#07418A',
         'ch-blue-slight-dark': '#00a0dd',
         'ch-blue-dark': '#2d78a9',
         'ch-blue-light': '#6abfdf',
@@ -20,6 +21,7 @@ module.exports = {
         'ch-grey-dark': '#414042',
         'ch-grey-darkest': '#979797',
         'ch-grey-medium': '#BCBEC0',
+        'ch-grey-medium-light': '#D6D7D9',
         'ch-grey-light': '#f5f5f5',
         'ch-grey-lighter': '#f7f7f7',
         'ch-grey-lightest': '#f9f9f9',

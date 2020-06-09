@@ -9,30 +9,31 @@
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body class="antialiased">
-    <header class="fixed w-full top-0 left-0">
-      <div class="flex justify-between items-center px-4 h-20 bg-white shadow-md"><a href="#"><img class="px-4" src="img/Clayton-Connect-Logo-Color.svg" alt="Clayton Homes"/></a>
-        <ul class="flex">
-          <li><a class="block px-8 py-6" href="#">Home</a></li>
-          <li><a class="block px-8 py-6" href="#">Services</a></li>
-          <li><a class="block px-8 py-6" href="#">Careers</a></li>
-          <li><a class="block px-8 py-6" href="#">Contact</a></li>
+    <header class="fixed z-10 w-full top-0 left-0">
+      <div class="flex justify-between items-center h-20 bg-white shadow-md"><a href="#"><img class="pl-6" src="img/Clayton-Connect-Logo-Color.svg" alt="Clayton Homes"/></a>
+        <ul class="menu bg-white" id="menu-target">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
+        <div class="menu-button-wrap"><a class="menu-button" href="#" id="menu-toggle"><img src="img/menu.svg"/></a></div>
       </div>
     </header>
-    <main class="mt-20 bg-gray-800">
+    <main class="mt-20">
       <div class="container px-4 mx-auto">
-        <h2 class="heading">Content Heading</h2>
-        <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
-        <h2 class="heading">Content Heading</h2>
-        <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
-        <h2 class="heading">Content Heading</h2>
-        <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
-        <h2 class="heading">Content Heading</h2>
-        <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
-        <h2 class="heading">Content Heading</h2>
-        <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
-        <h2 class="heading">Content Heading</h2>
-        <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
+        <div class="py-8">
+          <h2 class="heading heading-large">Large Heading</h2>
+          <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
+          <h2 class="heading heading-small">Small Heading</h2>
+          <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
+          <h2 class="subheading">Subheading</h2>
+          <p>The theme() function attempts to find the value you are looking for from the fully merged theme object, so it can reference your own customizations as well as the default theme values. It also works recursively, so as long as there is a static value at the end of the chain it will be able to resolve the value you are looking for.</p>
+        </div>
+      </div>
+      <div class="container px-4 mx-auto mt-8 text-center">
+        <h2 class="subheading">Clayton Connect&reg; has you covered.</h2>
+        <h2 class="heading heading-large">Contact us for a free quote</h2><a class="button mt-6" href="#">Contact Us</a>
       </div>
     </main>
     <footer>

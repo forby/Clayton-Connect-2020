@@ -1,13 +1,16 @@
-header.fixed.w-full.top-0.left-0
-    div.flex.justify-between.items-center.px-4.h-20.bg-white.shadow-md
+header.fixed.z-10.w-full.top-0.left-0
+    div.flex.justify-between.items-center.h-20.bg-white.shadow-md
         a(href="#")
-            img.px-4(src="img/Clayton-Connect-Logo-Color.svg", alt="Clayton Homes")
-        ul.flex
+            img.pl-6(src="img/Clayton-Connect-Logo-Color.svg", alt="Clayton Homes")
+        ul(class="menu bg-white", id="menu-target")
             li
-                a.block.px-8.py-6(href="#") Home
+                a(href="#") Home
             li
-                a.block.px-8.py-6(href="#") Services
+                a(href="#") Services
             li
-                a.block.px-8.py-6(href="#") Careers
+                a(href="#") Careers
             li
-                a.block.px-8.py-6(href="#") Contact
+                a(href="#") Contact
+        .menu-button-wrap
+            a.menu-button(href="#", id="menu-toggle")
+                img(src="img/menu.svg")

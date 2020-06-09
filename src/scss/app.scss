@@ -5,12 +5,57 @@
 /* TypeKit */
 @import url("https://use.typekit.net/mht7tlf.css");
 
+@import "navigation";
+
 html {
     font-size: 18px;
 }
 
+/**
+ * Button
+ */
+
+ .button {
+     @apply inline-block text-white bg-ch-blue px-6 pt-2 pb-3;
+     transition: background-color .2s;
+
+     &:hover {
+         @apply bg-ch-blue-hover;
+     }
+ }
+
+
+/**
+ * Headings
+ */
+
 .heading {
     font-weight: 800;
-    color: black;
-    font-size: 2.25rem;
+    color: #414042;
+}
+
+// heading after p
+p + .heading,
+p + .subheading {
+    @apply mt-8;
+}
+
+.heading-large {
+    font-size: 2.667rem;
+    letter-spacing: -0.05rem;
+}
+
+.heading-small {
+    font-size: 1.889rem;
+    letter-spacing: -0.03rem;
+}
+
+.subheading {
+    font-size: 1.444rem;
+}
+
+// P after Heading
+.heading + p,
+.subheading + p {
+    @apply mt-4;
 }

@@ -1,0 +1,50 @@
+/**
+ * Navigation
+ */
+.menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 5rem;
+    z-index: -1;
+    height: 0;
+    overflow: hidden;
+
+    li {
+        text-align: center;
+        font-weight: bold;
+
+        a {
+            @apply block px-4 py-3;
+        }
+    }
+
+    @screen md {
+        position: relative;
+        width: auto;
+        left: auto;
+        top: auto;
+        height: auto;
+        z-index: auto;
+        display: flex;
+        
+        @apply mr-4;
+
+        li {
+            text-align: left;
+            font-weight: normal;
+        }
+    }
+
+    &.open {
+        height: auto;
+    }
+}
+
+.menu-button-wrap {
+    @apply w-20 h-20 flex items-center justify-center border-l border-ch-grey-medium-light;
+
+    @screen md {
+        display: none;
+    }
+}
