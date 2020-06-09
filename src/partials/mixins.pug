@@ -1,0 +1,120 @@
+//- Retina Image
+//- Assumes @2x version
+//- =================================
+
+mixin retina-image(path, extension, classes, alt)
+  img(
+      data-srcset=path+"."+extension+" 1x, "+path+"@2x."+extension+" 2x", 
+      src=path+"."+extension, 
+      class=classes+" lazyload", 
+      alt=alt
+    )
+
+//- Looping Video
+//- =================================
+
+mixin looping-video(path, classes)
+  video(loop="loop", muted="", autoplay="", preload="auto", class=classes)
+    source(src=path type="video/mp4")
+
+mixin looping-full-video(path)
+  video.w-full(loop="loop", muted="", autoplay="", preload="auto")
+    source(src=path type="video/mp4")
+
+//- Section Photo
+//- =================================
+
+mixin section-photo(title, image, id, message=null, message2=null)
+  - var pieces = image.split('.');
+  - var retina = pieces.join('@2x.');
+  div.h-screen.bg-center.bg-cover.bg-no-repeat.bg-center(style='background-image: url('+image+')' id=id data-2x=retina)
+    div.fade-up.scroll-delay
+        h1.inline-block.text-white.font-extrabold.relative.bg-ch-blue-dark.pl-8.py-8.pr-8.mt-12.flag-end(class="md:pl-12 lg:pl-24")= title
+        if message
+          .bg-white.max-w-md.pl-6.pr-8.-mt-4.py-6.mr-4(class="md:pl-8 md:py-12")
+            div.flex.items-start
+              img.w-8(class="md:pt-2 md:w-auto" src="img/principle-logo.svg")
+              h2.text-ch-blue.text-lg.font-semibold.pl-8(class="sm:text-xl md:text-3xl")= message
+            if message2
+              div.flex.items-start.mt-4(class="md:pt-6")
+                img.w-8(class="md:pt-2 md:w-auto" src="img/principle-logo.svg")
+                h2.text-ch-blue.text-lg.font-semibold.pl-8(class="sm:text-xl md:text-3xl")= message2
+
+
+//- Stat Block
+//- =================================
+
+mixin stat-block(title, subtitle, photo, classes)
+  div.bg-center.bg-cover.px-6.py-20.text-center.w-full(class='md:w-1/2', style='background-image:url("'+photo+'")')
+    h3.text-white.text-5xl.font-extrabold.mb-0.fade-up.scroll-delay(class=classes)= title
+    p.text-white.font-bold.text-2xl.leading-none.mt-4.fade-up.scroll-delay
+      if block
+        block
+      else
+        = subtitle
+
+//- Video Block
+//- ==================================
+
+mixin video(image, url, width, height)
+  - width = width || 640
+  - height = height || 360
+  .video-container(style="padding-bottom: "+height/width*100+"%")
+    div.z-10.absolute.pin.flex.items-center.justify-center.bg-cover.bg-center(style="background-image:url('"+image+"')")
+      a.video-play-button(href="#")
+        img.w-3(src="img/play-icon.svg", alt="")
+    iframe(vid-src=url+'&autoplay=true' allow="autoplay" width=width height=height frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowtransparency="true" scrolling="no" )
+
+mixin video-new(image, url, width, height)
+  - width = width || 640
+  - height = height || 360
+  .video-container(style="padding-bottom: "+height/width*100+"%")
+    div.z-10.absolute.pin.flex.items-center.justify-center.bg-cover.bg-center(style="background-image:url('"+image+"')")
+      a.video-play-button(href="#")
+        img.w-3(src="img/play-icon.svg", alt="")
+    iframe(vid-src=url+'?autoplay=true' allow="autoplay" width=width height=height frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowtransparency="true" scrolling="no" )
+
+mixin video-youtube(image, url, width, height)
+  - width = width || 640
+  - height = height || 360
+  .video-container(style="padding-bottom: "+height/width*100+"%")
+    div.z-10.absolute.pin.flex.items-center.justify-center.bg-cover.bg-center(style="background-image:url('"+image+"')")
+      a.video-play-button(href="#")
+        img.w-3(src="img/play-icon.svg", alt="")
+    iframe(vid-src=url+'?autoplay=1' allow="autoplay; encrypted-media;" width=width height=height frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowtransparency="true" scrolling="no" )
+
+//- Placeholder Image
+//- ===================================
+
+mixin temp-img(length, width, classes=null)
+  img(src="https://via.placeholder.com/"+length+"x"+width, class=classes)
+
+mixin temp-img-bg(length, width, classes=null)
+  div.bg-center.bg-cover(class=classes, style="background-image: url('https://via.placeholder.com/"+length+"x"+width+"');")
+
+//- Fold Out Block
+//- ====================================
+
+mixin fold-out(data)
+  div.card-fold-out
+    div.card.fade-up.scroll-delay
+      img.photo(
+        data-srcset=data.photo+data.photoExt+" 1x, "+data.photo+"@2x"+data.photoExt+" 2x", 
+        src=data.photo+data.photoExt, 
+        class="lazyload"
+      )
+      div.flex.p-6.py-3.bg-white
+        .title.flex-1
+          h2.font-extrabold.text-ch-yellow.text-3xl.count-up.my-0.leading-none= data.count
+          h4.m-0.mt-1.text-base.text-ch-grey.font-normal= data.title
+        div.flex.items-center
+          a.button(href="#")
+      .flap
+        .description.text-center.p-6.pb-3
+          div
+            img(
+              data-srcset=data.icon+data.iconExt+" 1x, "+data.icon+"@2x"+data.iconExt+" 2x",
+              src=data.icon+data.iconExt,
+              class="lazyload"
+            )
+          p.m-0.pt-4.leading-tight= data.summary

@@ -1,0 +1,19 @@
+include partials/mixins
+
+html
+    head
+        title Clayton Homes
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        link(rel='stylesheet', href='app.css')
+        script(type="text/javascript" src="app.js")
+    body
+        
+        include partials/header
+        
+        div.p-6(class="md:p-16 lg:p-32 lg:flex")
+            div(class="lg:w-1/2 lg:pr-16 lg:border-r lg:border-ch-grey")
+                h2.heading Home Building Innovations
+        
+        include partials/footer
