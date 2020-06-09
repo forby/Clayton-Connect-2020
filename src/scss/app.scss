@@ -22,6 +22,14 @@ html {
      &:hover {
          @apply bg-ch-blue-hover;
      }
+
+    &.button-white {
+        @apply bg-white text-ch-blue;
+
+        &:hover {
+            @apply text-white bg-ch-blue;
+        }
+    }
  }
 
 
@@ -32,6 +40,14 @@ html {
 .heading {
     font-weight: 800;
     color: #414042;
+
+    &.heading-white {
+        color: white;
+    }
+
+    &.heading-blue {
+        color: #0075C9;
+    }
 }
 
 // heading after p

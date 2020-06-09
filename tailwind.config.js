@@ -26,6 +26,10 @@ module.exports = {
         'ch-grey-lighter': '#f7f7f7',
         'ch-grey-lightest': '#f9f9f9',
         'ch-yellow': '#ffc50a',
+      },
+      spacing: {
+        '96': '24rem',
+        '128': '32rem',
       }
     },
   },
