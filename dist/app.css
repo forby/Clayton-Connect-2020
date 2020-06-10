@@ -1849,6 +1849,10 @@ video {
   --divide-opacity: 0.5;
 }
 
+.divide-opacity-65 > :not(template) ~ :not(template){
+  --divide-opacity: 0.65;
+}
+
 .divide-opacity-75 > :not(template) ~ :not(template){
   --divide-opacity: 0.75;
 }
@@ -3883,6 +3887,10 @@ video {
   --bg-opacity: 0.5;
 }
 
+.bg-opacity-65{
+  --bg-opacity: 0.65;
+}
+
 .bg-opacity-75{
   --bg-opacity: 0.75;
 }
@@ -3903,6 +3911,10 @@ video {
   --bg-opacity: 0.5;
 }
 
+.hover\:bg-opacity-65:hover{
+  --bg-opacity: 0.65;
+}
+
 .hover\:bg-opacity-75:hover{
   --bg-opacity: 0.75;
 }
@@ -3921,6 +3933,10 @@ video {
 
 .focus\:bg-opacity-50:focus{
   --bg-opacity: 0.5;
+}
+
+.focus\:bg-opacity-65:focus{
+  --bg-opacity: 0.65;
 }
 
 .focus\:bg-opacity-75:focus{
@@ -5973,6 +5989,10 @@ video {
   --border-opacity: 0.5;
 }
 
+.border-opacity-65{
+  --border-opacity: 0.65;
+}
+
 .border-opacity-75{
   --border-opacity: 0.75;
 }
@@ -5993,6 +6013,10 @@ video {
   --border-opacity: 0.5;
 }
 
+.hover\:border-opacity-65:hover{
+  --border-opacity: 0.65;
+}
+
 .hover\:border-opacity-75:hover{
   --border-opacity: 0.75;
 }
@@ -6011,6 +6035,10 @@ video {
 
 .focus\:border-opacity-50:focus{
   --border-opacity: 0.5;
+}
+
+.focus\:border-opacity-65:focus{
+  --border-opacity: 0.65;
 }
 
 .focus\:border-opacity-75:focus{
@@ -8493,6 +8521,10 @@ video {
   opacity: 0.5;
 }
 
+.opacity-65{
+  opacity: 0.65;
+}
+
 .opacity-75{
   opacity: 0.75;
 }
@@ -8513,6 +8545,10 @@ video {
   opacity: 0.5;
 }
 
+.hover\:opacity-65:hover{
+  opacity: 0.65;
+}
+
 .hover\:opacity-75:hover{
   opacity: 0.75;
 }
@@ -8531,6 +8567,10 @@ video {
 
 .focus\:opacity-50:focus{
   opacity: 0.5;
+}
+
+.focus\:opacity-65:focus{
+  opacity: 0.65;
 }
 
 .focus\:opacity-75:focus{
@@ -14483,6 +14523,22 @@ video {
   --placeholder-opacity: 0.5;
 }
 
+.placeholder-opacity-65::-moz-placeholder{
+  --placeholder-opacity: 0.65;
+}
+
+.placeholder-opacity-65:-ms-input-placeholder{
+  --placeholder-opacity: 0.65;
+}
+
+.placeholder-opacity-65::-ms-input-placeholder{
+  --placeholder-opacity: 0.65;
+}
+
+.placeholder-opacity-65::placeholder{
+  --placeholder-opacity: 0.65;
+}
+
 .placeholder-opacity-75::-moz-placeholder{
   --placeholder-opacity: 0.75;
 }
@@ -14561,6 +14617,22 @@ video {
 
 .focus\:placeholder-opacity-50:focus::placeholder{
   --placeholder-opacity: 0.5;
+}
+
+.focus\:placeholder-opacity-65:focus::-moz-placeholder{
+  --placeholder-opacity: 0.65;
+}
+
+.focus\:placeholder-opacity-65:focus:-ms-input-placeholder{
+  --placeholder-opacity: 0.65;
+}
+
+.focus\:placeholder-opacity-65:focus::-ms-input-placeholder{
+  --placeholder-opacity: 0.65;
+}
+
+.focus\:placeholder-opacity-65:focus::placeholder{
+  --placeholder-opacity: 0.65;
 }
 
 .focus\:placeholder-opacity-75:focus::-moz-placeholder{
@@ -16832,6 +16904,10 @@ video {
   --text-opacity: 0.5;
 }
 
+.text-opacity-65{
+  --text-opacity: 0.65;
+}
+
 .text-opacity-75{
   --text-opacity: 0.75;
 }
@@ -16852,6 +16928,10 @@ video {
   --text-opacity: 0.5;
 }
 
+.hover\:text-opacity-65:hover{
+  --text-opacity: 0.65;
+}
+
 .hover\:text-opacity-75:hover{
   --text-opacity: 0.75;
 }
@@ -16870,6 +16950,10 @@ video {
 
 .focus\:text-opacity-50:focus{
   --text-opacity: 0.5;
+}
+
+.focus\:text-opacity-65:focus{
+  --text-opacity: 0.65;
 }
 
 .focus\:text-opacity-75:focus{
@@ -21284,6 +21368,10 @@ p + .subheading {
     --divide-opacity: 0.5;
   }
 
+  .sm\:divide-opacity-65 > :not(template) ~ :not(template){
+    --divide-opacity: 0.65;
+  }
+
   .sm\:divide-opacity-75 > :not(template) ~ :not(template){
     --divide-opacity: 0.75;
   }
@@ -23318,6 +23406,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .sm\:bg-opacity-65{
+    --bg-opacity: 0.65;
+  }
+
   .sm\:bg-opacity-75{
     --bg-opacity: 0.75;
   }
@@ -23338,6 +23430,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .sm\:hover\:bg-opacity-65:hover{
+    --bg-opacity: 0.65;
+  }
+
   .sm\:hover\:bg-opacity-75:hover{
     --bg-opacity: 0.75;
   }
@@ -23356,6 +23452,10 @@ p + .subheading {
 
   .sm\:focus\:bg-opacity-50:focus{
     --bg-opacity: 0.5;
+  }
+
+  .sm\:focus\:bg-opacity-65:focus{
+    --bg-opacity: 0.65;
   }
 
   .sm\:focus\:bg-opacity-75:focus{
@@ -25408,6 +25508,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .sm\:border-opacity-65{
+    --border-opacity: 0.65;
+  }
+
   .sm\:border-opacity-75{
     --border-opacity: 0.75;
   }
@@ -25428,6 +25532,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .sm\:hover\:border-opacity-65:hover{
+    --border-opacity: 0.65;
+  }
+
   .sm\:hover\:border-opacity-75:hover{
     --border-opacity: 0.75;
   }
@@ -25446,6 +25554,10 @@ p + .subheading {
 
   .sm\:focus\:border-opacity-50:focus{
     --border-opacity: 0.5;
+  }
+
+  .sm\:focus\:border-opacity-65:focus{
+    --border-opacity: 0.65;
   }
 
   .sm\:focus\:border-opacity-75:focus{
@@ -27928,6 +28040,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .sm\:opacity-65{
+    opacity: 0.65;
+  }
+
   .sm\:opacity-75{
     opacity: 0.75;
   }
@@ -27948,6 +28064,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .sm\:hover\:opacity-65:hover{
+    opacity: 0.65;
+  }
+
   .sm\:hover\:opacity-75:hover{
     opacity: 0.75;
   }
@@ -27966,6 +28086,10 @@ p + .subheading {
 
   .sm\:focus\:opacity-50:focus{
     opacity: 0.5;
+  }
+
+  .sm\:focus\:opacity-65:focus{
+    opacity: 0.65;
   }
 
   .sm\:focus\:opacity-75:focus{
@@ -33918,6 +34042,22 @@ p + .subheading {
     --placeholder-opacity: 0.5;
   }
 
+  .sm\:placeholder-opacity-65::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .sm\:placeholder-opacity-65:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .sm\:placeholder-opacity-65::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .sm\:placeholder-opacity-65::placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
   .sm\:placeholder-opacity-75::-moz-placeholder{
     --placeholder-opacity: 0.75;
   }
@@ -33996,6 +34136,22 @@ p + .subheading {
 
   .sm\:focus\:placeholder-opacity-50:focus::placeholder{
     --placeholder-opacity: 0.5;
+  }
+
+  .sm\:focus\:placeholder-opacity-65:focus::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .sm\:focus\:placeholder-opacity-65:focus:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .sm\:focus\:placeholder-opacity-65:focus::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .sm\:focus\:placeholder-opacity-65:focus::placeholder{
+    --placeholder-opacity: 0.65;
   }
 
   .sm\:focus\:placeholder-opacity-75:focus::-moz-placeholder{
@@ -36267,6 +36423,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .sm\:text-opacity-65{
+    --text-opacity: 0.65;
+  }
+
   .sm\:text-opacity-75{
     --text-opacity: 0.75;
   }
@@ -36287,6 +36447,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .sm\:hover\:text-opacity-65:hover{
+    --text-opacity: 0.65;
+  }
+
   .sm\:hover\:text-opacity-75:hover{
     --text-opacity: 0.75;
   }
@@ -36305,6 +36469,10 @@ p + .subheading {
 
   .sm\:focus\:text-opacity-50:focus{
     --text-opacity: 0.5;
+  }
+
+  .sm\:focus\:text-opacity-65:focus{
+    --text-opacity: 0.65;
   }
 
   .sm\:focus\:text-opacity-75:focus{
@@ -40537,6 +40705,10 @@ p + .subheading {
     --divide-opacity: 0.5;
   }
 
+  .md\:divide-opacity-65 > :not(template) ~ :not(template){
+    --divide-opacity: 0.65;
+  }
+
   .md\:divide-opacity-75 > :not(template) ~ :not(template){
     --divide-opacity: 0.75;
   }
@@ -42571,6 +42743,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .md\:bg-opacity-65{
+    --bg-opacity: 0.65;
+  }
+
   .md\:bg-opacity-75{
     --bg-opacity: 0.75;
   }
@@ -42591,6 +42767,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .md\:hover\:bg-opacity-65:hover{
+    --bg-opacity: 0.65;
+  }
+
   .md\:hover\:bg-opacity-75:hover{
     --bg-opacity: 0.75;
   }
@@ -42609,6 +42789,10 @@ p + .subheading {
 
   .md\:focus\:bg-opacity-50:focus{
     --bg-opacity: 0.5;
+  }
+
+  .md\:focus\:bg-opacity-65:focus{
+    --bg-opacity: 0.65;
   }
 
   .md\:focus\:bg-opacity-75:focus{
@@ -44661,6 +44845,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .md\:border-opacity-65{
+    --border-opacity: 0.65;
+  }
+
   .md\:border-opacity-75{
     --border-opacity: 0.75;
   }
@@ -44681,6 +44869,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .md\:hover\:border-opacity-65:hover{
+    --border-opacity: 0.65;
+  }
+
   .md\:hover\:border-opacity-75:hover{
     --border-opacity: 0.75;
   }
@@ -44699,6 +44891,10 @@ p + .subheading {
 
   .md\:focus\:border-opacity-50:focus{
     --border-opacity: 0.5;
+  }
+
+  .md\:focus\:border-opacity-65:focus{
+    --border-opacity: 0.65;
   }
 
   .md\:focus\:border-opacity-75:focus{
@@ -47181,6 +47377,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .md\:opacity-65{
+    opacity: 0.65;
+  }
+
   .md\:opacity-75{
     opacity: 0.75;
   }
@@ -47201,6 +47401,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .md\:hover\:opacity-65:hover{
+    opacity: 0.65;
+  }
+
   .md\:hover\:opacity-75:hover{
     opacity: 0.75;
   }
@@ -47219,6 +47423,10 @@ p + .subheading {
 
   .md\:focus\:opacity-50:focus{
     opacity: 0.5;
+  }
+
+  .md\:focus\:opacity-65:focus{
+    opacity: 0.65;
   }
 
   .md\:focus\:opacity-75:focus{
@@ -53171,6 +53379,22 @@ p + .subheading {
     --placeholder-opacity: 0.5;
   }
 
+  .md\:placeholder-opacity-65::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .md\:placeholder-opacity-65:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .md\:placeholder-opacity-65::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .md\:placeholder-opacity-65::placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
   .md\:placeholder-opacity-75::-moz-placeholder{
     --placeholder-opacity: 0.75;
   }
@@ -53249,6 +53473,22 @@ p + .subheading {
 
   .md\:focus\:placeholder-opacity-50:focus::placeholder{
     --placeholder-opacity: 0.5;
+  }
+
+  .md\:focus\:placeholder-opacity-65:focus::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .md\:focus\:placeholder-opacity-65:focus:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .md\:focus\:placeholder-opacity-65:focus::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .md\:focus\:placeholder-opacity-65:focus::placeholder{
+    --placeholder-opacity: 0.65;
   }
 
   .md\:focus\:placeholder-opacity-75:focus::-moz-placeholder{
@@ -55520,6 +55760,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .md\:text-opacity-65{
+    --text-opacity: 0.65;
+  }
+
   .md\:text-opacity-75{
     --text-opacity: 0.75;
   }
@@ -55540,6 +55784,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .md\:hover\:text-opacity-65:hover{
+    --text-opacity: 0.65;
+  }
+
   .md\:hover\:text-opacity-75:hover{
     --text-opacity: 0.75;
   }
@@ -55558,6 +55806,10 @@ p + .subheading {
 
   .md\:focus\:text-opacity-50:focus{
     --text-opacity: 0.5;
+  }
+
+  .md\:focus\:text-opacity-65:focus{
+    --text-opacity: 0.65;
   }
 
   .md\:focus\:text-opacity-75:focus{
@@ -59790,6 +60042,10 @@ p + .subheading {
     --divide-opacity: 0.5;
   }
 
+  .lg\:divide-opacity-65 > :not(template) ~ :not(template){
+    --divide-opacity: 0.65;
+  }
+
   .lg\:divide-opacity-75 > :not(template) ~ :not(template){
     --divide-opacity: 0.75;
   }
@@ -61824,6 +62080,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .lg\:bg-opacity-65{
+    --bg-opacity: 0.65;
+  }
+
   .lg\:bg-opacity-75{
     --bg-opacity: 0.75;
   }
@@ -61844,6 +62104,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .lg\:hover\:bg-opacity-65:hover{
+    --bg-opacity: 0.65;
+  }
+
   .lg\:hover\:bg-opacity-75:hover{
     --bg-opacity: 0.75;
   }
@@ -61862,6 +62126,10 @@ p + .subheading {
 
   .lg\:focus\:bg-opacity-50:focus{
     --bg-opacity: 0.5;
+  }
+
+  .lg\:focus\:bg-opacity-65:focus{
+    --bg-opacity: 0.65;
   }
 
   .lg\:focus\:bg-opacity-75:focus{
@@ -63914,6 +64182,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .lg\:border-opacity-65{
+    --border-opacity: 0.65;
+  }
+
   .lg\:border-opacity-75{
     --border-opacity: 0.75;
   }
@@ -63934,6 +64206,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .lg\:hover\:border-opacity-65:hover{
+    --border-opacity: 0.65;
+  }
+
   .lg\:hover\:border-opacity-75:hover{
     --border-opacity: 0.75;
   }
@@ -63952,6 +64228,10 @@ p + .subheading {
 
   .lg\:focus\:border-opacity-50:focus{
     --border-opacity: 0.5;
+  }
+
+  .lg\:focus\:border-opacity-65:focus{
+    --border-opacity: 0.65;
   }
 
   .lg\:focus\:border-opacity-75:focus{
@@ -66434,6 +66714,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .lg\:opacity-65{
+    opacity: 0.65;
+  }
+
   .lg\:opacity-75{
     opacity: 0.75;
   }
@@ -66454,6 +66738,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .lg\:hover\:opacity-65:hover{
+    opacity: 0.65;
+  }
+
   .lg\:hover\:opacity-75:hover{
     opacity: 0.75;
   }
@@ -66472,6 +66760,10 @@ p + .subheading {
 
   .lg\:focus\:opacity-50:focus{
     opacity: 0.5;
+  }
+
+  .lg\:focus\:opacity-65:focus{
+    opacity: 0.65;
   }
 
   .lg\:focus\:opacity-75:focus{
@@ -72424,6 +72716,22 @@ p + .subheading {
     --placeholder-opacity: 0.5;
   }
 
+  .lg\:placeholder-opacity-65::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .lg\:placeholder-opacity-65:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .lg\:placeholder-opacity-65::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .lg\:placeholder-opacity-65::placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
   .lg\:placeholder-opacity-75::-moz-placeholder{
     --placeholder-opacity: 0.75;
   }
@@ -72502,6 +72810,22 @@ p + .subheading {
 
   .lg\:focus\:placeholder-opacity-50:focus::placeholder{
     --placeholder-opacity: 0.5;
+  }
+
+  .lg\:focus\:placeholder-opacity-65:focus::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .lg\:focus\:placeholder-opacity-65:focus:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .lg\:focus\:placeholder-opacity-65:focus::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .lg\:focus\:placeholder-opacity-65:focus::placeholder{
+    --placeholder-opacity: 0.65;
   }
 
   .lg\:focus\:placeholder-opacity-75:focus::-moz-placeholder{
@@ -74773,6 +75097,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .lg\:text-opacity-65{
+    --text-opacity: 0.65;
+  }
+
   .lg\:text-opacity-75{
     --text-opacity: 0.75;
   }
@@ -74793,6 +75121,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .lg\:hover\:text-opacity-65:hover{
+    --text-opacity: 0.65;
+  }
+
   .lg\:hover\:text-opacity-75:hover{
     --text-opacity: 0.75;
   }
@@ -74811,6 +75143,10 @@ p + .subheading {
 
   .lg\:focus\:text-opacity-50:focus{
     --text-opacity: 0.5;
+  }
+
+  .lg\:focus\:text-opacity-65:focus{
+    --text-opacity: 0.65;
   }
 
   .lg\:focus\:text-opacity-75:focus{
@@ -79043,6 +79379,10 @@ p + .subheading {
     --divide-opacity: 0.5;
   }
 
+  .xl\:divide-opacity-65 > :not(template) ~ :not(template){
+    --divide-opacity: 0.65;
+  }
+
   .xl\:divide-opacity-75 > :not(template) ~ :not(template){
     --divide-opacity: 0.75;
   }
@@ -81077,6 +81417,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .xl\:bg-opacity-65{
+    --bg-opacity: 0.65;
+  }
+
   .xl\:bg-opacity-75{
     --bg-opacity: 0.75;
   }
@@ -81097,6 +81441,10 @@ p + .subheading {
     --bg-opacity: 0.5;
   }
 
+  .xl\:hover\:bg-opacity-65:hover{
+    --bg-opacity: 0.65;
+  }
+
   .xl\:hover\:bg-opacity-75:hover{
     --bg-opacity: 0.75;
   }
@@ -81115,6 +81463,10 @@ p + .subheading {
 
   .xl\:focus\:bg-opacity-50:focus{
     --bg-opacity: 0.5;
+  }
+
+  .xl\:focus\:bg-opacity-65:focus{
+    --bg-opacity: 0.65;
   }
 
   .xl\:focus\:bg-opacity-75:focus{
@@ -83167,6 +83519,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .xl\:border-opacity-65{
+    --border-opacity: 0.65;
+  }
+
   .xl\:border-opacity-75{
     --border-opacity: 0.75;
   }
@@ -83187,6 +83543,10 @@ p + .subheading {
     --border-opacity: 0.5;
   }
 
+  .xl\:hover\:border-opacity-65:hover{
+    --border-opacity: 0.65;
+  }
+
   .xl\:hover\:border-opacity-75:hover{
     --border-opacity: 0.75;
   }
@@ -83205,6 +83565,10 @@ p + .subheading {
 
   .xl\:focus\:border-opacity-50:focus{
     --border-opacity: 0.5;
+  }
+
+  .xl\:focus\:border-opacity-65:focus{
+    --border-opacity: 0.65;
   }
 
   .xl\:focus\:border-opacity-75:focus{
@@ -85687,6 +86051,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .xl\:opacity-65{
+    opacity: 0.65;
+  }
+
   .xl\:opacity-75{
     opacity: 0.75;
   }
@@ -85707,6 +86075,10 @@ p + .subheading {
     opacity: 0.5;
   }
 
+  .xl\:hover\:opacity-65:hover{
+    opacity: 0.65;
+  }
+
   .xl\:hover\:opacity-75:hover{
     opacity: 0.75;
   }
@@ -85725,6 +86097,10 @@ p + .subheading {
 
   .xl\:focus\:opacity-50:focus{
     opacity: 0.5;
+  }
+
+  .xl\:focus\:opacity-65:focus{
+    opacity: 0.65;
   }
 
   .xl\:focus\:opacity-75:focus{
@@ -91677,6 +92053,22 @@ p + .subheading {
     --placeholder-opacity: 0.5;
   }
 
+  .xl\:placeholder-opacity-65::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .xl\:placeholder-opacity-65:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .xl\:placeholder-opacity-65::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .xl\:placeholder-opacity-65::placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
   .xl\:placeholder-opacity-75::-moz-placeholder{
     --placeholder-opacity: 0.75;
   }
@@ -91755,6 +92147,22 @@ p + .subheading {
 
   .xl\:focus\:placeholder-opacity-50:focus::placeholder{
     --placeholder-opacity: 0.5;
+  }
+
+  .xl\:focus\:placeholder-opacity-65:focus::-moz-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .xl\:focus\:placeholder-opacity-65:focus:-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .xl\:focus\:placeholder-opacity-65:focus::-ms-input-placeholder{
+    --placeholder-opacity: 0.65;
+  }
+
+  .xl\:focus\:placeholder-opacity-65:focus::placeholder{
+    --placeholder-opacity: 0.65;
   }
 
   .xl\:focus\:placeholder-opacity-75:focus::-moz-placeholder{
@@ -94026,6 +94434,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .xl\:text-opacity-65{
+    --text-opacity: 0.65;
+  }
+
   .xl\:text-opacity-75{
     --text-opacity: 0.75;
   }
@@ -94046,6 +94458,10 @@ p + .subheading {
     --text-opacity: 0.5;
   }
 
+  .xl\:hover\:text-opacity-65:hover{
+    --text-opacity: 0.65;
+  }
+
   .xl\:hover\:text-opacity-75:hover{
     --text-opacity: 0.75;
   }
@@ -94064,6 +94480,10 @@ p + .subheading {
 
   .xl\:focus\:text-opacity-50:focus{
     --text-opacity: 0.5;
+  }
+
+  .xl\:focus\:text-opacity-65:focus{
+    --text-opacity: 0.65;
   }
 
   .xl\:focus\:text-opacity-75:focus{
