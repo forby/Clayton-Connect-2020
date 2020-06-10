@@ -19959,6 +19959,16 @@ html {
   font-size: 18px;
 }
 
+video {
+  width: 100vw;
+  min-height: 24rem;
+  min-width: 50rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /**
  * Button
  */
