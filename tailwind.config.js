@@ -12,10 +12,8 @@ module.exports = {
       },
       colors: {
         'ch-blue': '#0075C9',
-        'ch-blue-hover': '#07418A',
-        'ch-blue-slight-dark': '#00a0dd',
-        'ch-blue-dark': '#2d78a9',
-        'ch-blue-light': '#6abfdf',
+        'ch-blue-hover-light': '#179EFF',
+        'ch-blue-hover-dark': '#003F8C',
         'ch-blue-link': '#00a0dd',
         'ch-grey': '#6d6e71',
         'ch-grey-dark': '#414042',

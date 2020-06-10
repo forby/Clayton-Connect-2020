@@ -30,14 +30,14 @@ video {
      transition: background-color .2s;
 
      &:hover {
-         @apply bg-ch-blue-hover;
+         @apply bg-ch-blue-hover-light;
      }
 
     &.button-white {
-        @apply bg-white text-ch-blue;
+        @apply bg-white text-ch-blue-link;
 
         &:hover {
-            @apply text-white bg-ch-blue;
+            @apply text-white bg-ch-blue-hover-dark;
         }
     }
  }
