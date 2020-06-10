@@ -19891,6 +19891,14 @@ video {
   font-weight: bold;
 }
 
+.menu li:first-child {
+  padding-top: 1rem;
+}
+
+.menu li:last-child {
+  padding-bottom: 1rem;
+}
+
 .menu li a {
   display: block;
   padding-left: 1rem;
@@ -19914,6 +19922,14 @@ video {
   .menu li {
     text-align: left;
     font-weight: normal;
+  }
+
+  .menu li:first-child {
+    padding-top: 0;
+  }
+
+  .menu li:last-child {
+    padding-bottom: 0;
   }
 }
 

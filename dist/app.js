@@ -13649,6 +13649,7 @@ function setupMenuToggle() {
   var toggle = document.getElementById('menu-toggle');
   var target = document.getElementById('menu-target');
   toggle.addEventListener("click", function (event) {
+    event.preventDefault();
     target.classList.toggle('open');
   });
 }
@@ -13659,6 +13660,7 @@ function setupNavigation() {
       event.preventDefault();
       var header = document.querySelector('header').offsetHeight;
       var href = event.target.getAttribute('href');
+      document.querySelector('.menu').classList.remove('open');
 
       if (document.querySelector(href) != null) {
         gsap__WEBPACK_IMPORTED_MODULE_0__["gsap"].to(window, {

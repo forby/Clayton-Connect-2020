@@ -9,6 +9,7 @@ function setupMenuToggle() {
     var toggle = document.getElementById('menu-toggle');
     var target = document.getElementById('menu-target');
     toggle.addEventListener("click", function(event) {
+        event.preventDefault();
         target.classList.toggle('open');
     });
 }
@@ -20,6 +21,7 @@ function setupNavigation() {
 
             var header = document.querySelector('header').offsetHeight;
             var href = event.target.getAttribute('href');
+            document.querySelector('.menu').classList.remove('open');
 
             if (document.querySelector(href) != null) {
                 gsap.to(window, {duration:windowScrollTime, scrollTo: {y: href, offsetY: header}, ease: windowScrollEasing});
