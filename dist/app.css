@@ -19876,8 +19876,8 @@ video {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   --bg-opacity: 1;
-  background-color: #003F8C;
-  background-color: rgba(0, 63, 140, var(--bg-opacity));
+  background-color: #0075C9;
+  background-color: rgba(0, 117, 201, var(--bg-opacity));
 }
 
 /**
