@@ -3,6 +3,7 @@ import { ScrollToPlugin } from 'gsap/all'
 gsap.registerPlugin(ScrollToPlugin)
 
 var windowScrollTime = 1.2;
+var menuOpenTime = 0.5;
 var windowScrollEasing = Power2.easeInOut;
 
 function setupMenuToggle() {
@@ -10,7 +11,20 @@ function setupMenuToggle() {
     var target = document.getElementById('menu-target');
     toggle.addEventListener("click", function(event) {
         event.preventDefault();
-        target.classList.toggle('open');
+        // target.classList.toggle('open');
+
+        if (!target.classList.contains("open")) {
+            // Open the menu
+            gsap.set(target, {height:"auto"});
+            gsap.from(target, menuOpenTime, {height:0, ease: windowScrollEasing});
+            target.classList.add("open");
+        } else {
+            // Close the menu
+            gsap.to(target, menuOpenTime, {height:0, ease: windowScrollEasing, onComplete: function() {
+                gsap.set(target, {clearProps: "height"});
+            }});
+            target.classList.remove("open");
+        }
     });
 }
 

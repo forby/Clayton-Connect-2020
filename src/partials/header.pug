@@ -1,9 +1,10 @@
-header.fixed.z-10.w-full.top-0.left-0.bg-white.shadow-md
+header.fixed.z-10.w-full.top-0.left-0.bg-white(class="md:shadow-md")
     div(class="md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl md:mx-auto md:px-4")
-        div.flex.justify-between.items-center.h-20
-            a(href="#")
+        .flex.justify-between.items-center.h-20.relative
+            .w-full.h-full.bg-white.absolute.top-0.left-0(class="shadow-md md:shadow-none")
+            a.relative(href="#")
                 img.pl-6(src="img/Clayton-Connect-Logo-Color.svg", alt="Clayton Homes")
-            ul(class="menu bg-white", id="menu-target")
+            ul(class="relative menu bg-white", id="menu-target")
                 li
                     a.nav-anchor(href="#home") Home
                 li
@@ -12,6 +13,6 @@ header.fixed.z-10.w-full.top-0.left-0.bg-white.shadow-md
                     a(href="https://careers.claytonhomes.com/our-businesses/clayton-connect") Careers
                 li
                     a.nav-anchor(href="#contact") Contact
-            .menu-button-wrap
+            .relative.menu-button-wrap
                 a.menu-button(href="#", id="menu-toggle")
                     img(src="img/menu.svg")

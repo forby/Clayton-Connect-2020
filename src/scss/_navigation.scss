@@ -24,6 +24,11 @@
 
         a {
             @apply block px-4 py-3;
+            transition: color .2s;
+
+            &:hover {
+                @apply text-ch-blue;
+            }
         }
     }
 
@@ -32,7 +37,7 @@
         width: auto;
         left: auto;
         top: auto;
-        height: auto;
+        height: auto !important;
         z-index: auto;
         display: flex;
 
