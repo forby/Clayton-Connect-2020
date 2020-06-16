@@ -66,4 +66,18 @@
     @screen md {
         display: none;
     }
+
+    .to-close {
+        @apply hidden;
+    }
+}
+
+.open + .menu-button-wrap {
+    .to-close {
+        @apply inline;
+    }
+
+    .to-open {
+        @apply hidden;
+    }
 }

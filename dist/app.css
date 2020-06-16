@@ -19829,6 +19829,18 @@ video {
   }
 }
 
+.menu-button-wrap .to-close {
+  display: none;
+}
+
+.open + .menu-button-wrap .to-close {
+  display: inline;
+}
+
+.open + .menu-button-wrap .to-open {
+  display: none;
+}
+
 html {
   font-size: 18px;
 }
