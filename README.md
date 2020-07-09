@@ -8,4 +8,4 @@ The markup for this page is built with [Pug](https://pugjs.org/api/getting-start
 
 If you'd like to minify the css and js, run `npm run production`.
 
-Otherwise if you want to make small changes, you can find the compiled markup in `/dist`, though this will be overwritten with any subsequent compile.
+**__Otherwise__** if you just want to make small final changes, you can edit the compiled markup in `/dist`, though this will be overwritten with any subsequent compile.
